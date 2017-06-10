@@ -8,7 +8,7 @@ const opcoes = { port: porta, chromeFlags: parametros }
 
 const main = async () => {
   const headlessChromium = await launch(opcoes)
-  const protocolo = await CDP({ port: porta })
+  const protocolo = await CDP({ port: headlessChromium.port })
   const { Page, Runtime } = protocolo
 
   await Promise.all([ Page.enable(), Runtime.enable() ])
