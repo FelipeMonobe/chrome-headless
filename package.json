@@ -1,0 +1,27 @@
+{
+  "name": "chrome-headless",
+  "version": "1.0.0",
+  "description": "Usando o Chrome em modo headless de forma programática",
+  "main": "index.js",
+  "scripts": {
+    "snapshoot": "node snapshooter/index.js",
+    "scrap": "node scrapper/index.js"
+  },
+  "keywords": [
+    "chrome",
+    "headless",
+    "node",
+    "nodejs",
+    "javascript",
+    "programatticaly",
+    "snapshooting",
+    "scrapping",
+    "crawling"
+  ],
+  "author": "Felipe Monobe",
+  "license": "ISC",
+  "dependencies": {
+    "chrome-remote-interface": "^0.23.2",
+    "lighthouse": "^2.1.0"
+  }
+}
